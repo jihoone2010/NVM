@@ -250,6 +250,42 @@ body {
     font-family: 'Georgia', serif;
 }
 
+/* magazine section*/
+
+.archive-view-btn {
+    display: inline-block;
+    background: #3b82f6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: 2px solid #3b82f6;
+    border-radius: 0;
+    text-decoration: none;
+    font-family: 'Georgia', serif;
+    font-size: 0.9rem;
+    font-weight: normal;
+    transition: all 0.2s ease;
+    margin-top: 1rem;
+    text-align: center;
+    min-width: 60px;
+}
+
+.archive-view-btn:hover {
+    background: #60a5fa;
+    border-color: #60a5fa;
+    color: white;
+}
+
+/* Ensure archive-item has proper spacing for the button */
+.archive-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.archive-item ul {
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
 /* About Section */
 .about-section {
     background: #f8f8f8;
@@ -308,6 +344,13 @@ body {
 }
 
 /* Events Page */
+
+.dbqlink{
+    text-decoration: none;
+    color: #666;
+    text-decoration: underline;
+}
+
 .events-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -712,3 +755,7 @@ body {
         padding: 2rem 1rem;
     }
 } 
+
+
+
+
